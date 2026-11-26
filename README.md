@@ -1,42 +1,34 @@
-#include <Servo.h>  // Include the Servo library
+# 4-DOF Robotic Arm
 
-// Define the Servo objects for each motor
-Servo servo1;
-Servo servo2;
-Servo servo3;
-Servo servo4;
+**Robotics · Arduino · MATLAB**
 
-// Define the pins for each servo motor
-const int servoPin1 = 9;
-const int servoPin2 = 10;
-const int servoPin3 = 11;
-const int servoPin4 = 12;
+An academic manipulator project combining mechanical design, modeling documentation and a four-servo position demonstration.
 
-// Define preset angles for each servo motor
-int angle1 = 90;  // Angle for servo 1
-int angle2 = 45;  // Angle for servo 2
-int angle3 = 135; // Angle for servo 3
-int angle4 = 180; // Angle for servo 4
+![Robotic arm prototype](20240505_144617.jpg)
 
-void setup() {
-  // Attach each servo to a pin
-  servo1.attach(servoPin1);
-  servo2.attach(servoPin2);
-  servo3.attach(servoPin3);
-  servo4.attach(servoPin4);
-  
-  // Move servos to preset angles
-  servo1.write(angle1);
-  servo2.write(angle2);
-  servo3.write(angle3);
-  servo4.write(angle4);
-  
-  // Set up the serial communication for debugging
-  Serial.begin(9600);
-  Serial.println("Servos moved to preset angles.");
-}
+## Engineering highlights
 
-void loop() {
-  // The loop can be left empty if the servos should remain at preset angles
-  // If you want to move the servos to new angles, you can add the code here
-}
+- Four Arduino Servo objects connected to pins 9–12.
+- Preset joint commands of 90°, 45°, 135° and 180°.
+- MATLAB code and project report provided as PDFs.
+
+## Project files
+
+| File | Purpose |
+| --- | --- |
+| [4 DOF Robotic Arm.pdf](4%20DOF%20Robotic%20Arm.pdf) | Original source or design file |
+| [MATLAB Code.pdf](MATLAB%20Code.pdf) | Original source or design file |
+| [Video.mp4](Video.mp4) | Original source or design file |
+| [20240505_144617.jpg](20240505_144617.jpg) | Original source or design file |
+
+## How to explore or reproduce
+
+Review the report and MATLAB code PDF. The original Arduino sketch is preserved in [ServoPreset.ino](ServoPreset/ServoPreset.ino). Review joint limits, wiring and external servo power before uploading to compatible hardware.
+
+## Scope and limitations
+
+The included sketch commands preset positions; it does not itself implement closed-loop PID, trajectory planning or inverse kinematics. MATLAB code is distributed as a PDF rather than a runnable script.
+
+## Portfolio
+
+[Hassan Ali Janjua — Engineering portfolio](https://github.com/HassanAliJanjua03)
