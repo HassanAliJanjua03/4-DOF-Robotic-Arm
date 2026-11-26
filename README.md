@@ -12,14 +12,26 @@ An academic manipulator project combining mechanical design, modeling documentat
 - Preset joint commands of 90°, 45°, 135° and 180°.
 - MATLAB code and project report provided as PDFs.
 
+## Servo command example
+
+| Servo | Arduino pin | Preset angle |
+| --- | ---: | ---: |
+| 1 | 9 | 90° |
+| 2 | 10 | 45° |
+| 3 | 11 | 135° |
+| 4 | 12 | 180° |
+
+These are the values in the original demonstration sketch, not measured joint positions. [Watch the original demonstration](Video.mp4).
+
 ## Project files
 
 | File | Purpose |
 | --- | --- |
-| [4 DOF Robotic Arm.pdf](4%20DOF%20Robotic%20Arm.pdf) | Original source or design file |
-| [MATLAB Code.pdf](MATLAB%20Code.pdf) | Original source or design file |
-| [Video.mp4](Video.mp4) | Original source or design file |
-| [20240505_144617.jpg](20240505_144617.jpg) | Original source or design file |
+| [4 DOF Robotic Arm.pdf](4%20DOF%20Robotic%20Arm.pdf) | Engineering report (PDF) |
+| [MATLAB Code.pdf](MATLAB%20Code.pdf) | MATLAB code reference (PDF) |
+| [ServoPreset.ino](ServoPreset/ServoPreset.ino) | Preserved Arduino sketch |
+| [Video.mp4](Video.mp4) | Original demonstration video |
+| [20240505_144617.jpg](20240505_144617.jpg) | Original project photograph |
 
 ## How to explore or reproduce
 
